@@ -4,9 +4,9 @@ OrderFlow is an event-driven order management platform built with Spring Boot mi
 
 ## Architecture
 
-Coming soon...
+Architecture diagram will be added as the project evolves.
 
-## Stack
+## Tech Stack
 
 - Java 21
 - Spring Boot
@@ -17,13 +17,25 @@ Coming soon...
 
 ## Roadmap
 
-- [ ] Docker Compose infrastructure
+### Infrastructure
+- [ ] Docker Compose
+- [ ] PostgreSQL
+- [ ] Apache Kafka
+- [ ] Kafka UI
+
+### Services
 - [ ] Customer Service
 - [ ] Product Service
 - [ ] Order Service
-- [ ] OpenFeign integration
-- [ ] Kafka integration
 - [ ] Payment Service
 - [ ] Notification Service
+
+### Communication
+- [ ] OpenFeign integration
+- [ ] Kafka integration
+
+### Security
 - [ ] Authentication with JWT
+
+### Quality
 - [ ] Automated tests
