@@ -2,6 +2,9 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: customer-service
+
   datasource:
     url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:orderflow}
     username: ${POSTGRES_USER:postgres}
@@ -9,9 +12,14 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   jpa:
+    open-in-view: false
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
