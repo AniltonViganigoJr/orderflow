@@ -45,4 +45,10 @@ public class Customer {
     public void prePersist() {
         this.createdAt = LocalDateTime.now();
     }
+
+    public void update(String name, String email, String cpf) {
+        this.name = name;
+        this.email = email;
+        this.cpf = cpf;
+    }
 }
