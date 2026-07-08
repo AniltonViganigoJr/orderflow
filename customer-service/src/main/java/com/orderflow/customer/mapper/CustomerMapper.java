@@ -3,9 +3,9 @@ package com.orderflow.customer.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import com.orderflow.customer.domain.Customer;
 import com.orderflow.customer.dto.request.CustomerRequest;
 import com.orderflow.customer.dto.response.CustomerResponse;
-import com.orderflow.customer.entity.Customer;
 
 @Mapper(componentModel = "spring")
 public interface CustomerMapper {

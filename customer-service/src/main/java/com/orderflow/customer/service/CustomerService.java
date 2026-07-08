@@ -7,9 +7,9 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.orderflow.customer.domain.Customer;
 import com.orderflow.customer.dto.request.CustomerRequest;
 import com.orderflow.customer.dto.response.CustomerResponse;
-import com.orderflow.customer.entity.Customer;
 import com.orderflow.customer.exception.customer.CpfAlreadyExistsException;
 import com.orderflow.customer.exception.customer.CustomerNotFoundException;
 import com.orderflow.customer.exception.customer.EmailAlreadyExistsException;
