@@ -8,8 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.orderflow.customer.entity.Customer;
-import com.orderflow.customer.repository.CustomerRepository;
+import com.orderflow.customer.domain.Customer;
 
 @SpringBootTest
 class CustomerRepositoryTest {
